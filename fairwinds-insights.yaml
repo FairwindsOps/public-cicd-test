@@ -1,0 +1,18 @@
+images:
+  folder: ./temp/images
+  docker:
+    - busybox
+manifests:
+  yaml:
+    - ./failing.yaml
+    - ./passing.yaml
+  helm:
+    - name: helm-release-pruner
+      path: ./chart
+      variableFile: ./chart/values.yaml
+
+options:
+  tempFolder: ./temp/insights
+  organization: acme-co
+  fail: true
+  repositoryName: fairwindsops/cicd-test

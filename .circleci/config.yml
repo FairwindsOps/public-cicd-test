@@ -1,0 +1,24 @@
+version: 2.1
+
+executors:
+  vm:
+    machine:
+      enabled: true
+
+jobs:
+  test:
+    docker:
+      - image: quay.io/reactiveops/ci-images:v11.0-stretch
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Insights CI
+          command: curl https://staging.insights.fairwinds.com/static/insights-ci.sh | bash
+
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
