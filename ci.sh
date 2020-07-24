@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC1003
-set -e
+set -ex
 
 # Based on https://gist.github.com/pkuczynski/8665367
 # https://github.com/jasperes/bash-yaml MIT license
