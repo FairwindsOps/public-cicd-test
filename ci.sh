@@ -55,10 +55,10 @@ create_variables() {
 
 create_variables fairwinds-insights.yaml fairwinds_
 
-fairwinds_images_folder=${fairwinds_images_folder:-"/tmp/images"}
-fairwinds_manifests_folder=${fairwinds_manifests_folder:-"/tmp/manifests"}
-fairwinds_options_tempFolder=${fairwinds_options_tempFolder:-"/tmp/options"}
-fairwinds_options_junitOutput=${fairwinds_options_junitOutput:-"/tmp/junit"}
+fairwinds_images_folder=${fairwinds_images_folder:-"./tmp/images"}
+fairwinds_manifests_folder=${fairwinds_manifests_folder:-"./tmp/manifests"}
+fairwinds_options_tempFolder=${fairwinds_options_tempFolder:-"./tmp/options"}
+fairwinds_options_junitOutput=${fairwinds_options_junitOutput:-"./tmp/junit"}
 
 mkdir -p $fairwinds_images_folder
 mkdir -p $fairwinds_manifests_folder

@@ -1,5 +1,4 @@
 images:
-  folder: ./temp/images
   docker:
     - busybox
 manifests:
