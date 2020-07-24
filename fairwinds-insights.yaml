@@ -1,7 +1,9 @@
 images:
+  folder: ./tmp/images
   docker:
     - busybox
 manifests:
+  folder: ./tmp/manifests
   yaml:
     - ./failing.yaml
     - ./passing.yaml
@@ -11,6 +13,7 @@ manifests:
       variableFile: ./chart/values.yaml
 
 options:
+  tempFolder: ./tmp/options
   organization: acme-co
   fail: true
   repositoryName: fairwindsops/cicd-test
