@@ -14,7 +14,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: Insights CI
-          command: curl -L https://staging.insights.fairwinds.com/static/insights-ci.sh | bash
+          command: ./ci.sh
 
 
 workflows:
