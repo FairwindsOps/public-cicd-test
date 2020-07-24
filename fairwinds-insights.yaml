@@ -12,7 +12,6 @@ manifests:
       variableFile: ./chart/values.yaml
 
 options:
-  tempFolder: ./temp/insights
   organization: acme-co
   fail: true
   repositoryName: fairwindsops/cicd-test
