@@ -1,7 +1,6 @@
 images:
   folder: ./tmp/images
-  docker:
-    - busybox
+  docker: []
 manifests:
   folder: ./tmp/manifests
   yaml:
