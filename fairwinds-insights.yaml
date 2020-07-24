@@ -1,6 +1,5 @@
 images:
   folder: ./tmp/images
-  docker: []
 manifests:
   folder: ./tmp/manifests
   yaml:
