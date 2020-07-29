@@ -69,7 +69,7 @@ docker create --name insights-ci -e FAIRWINDS_TOKEN=$FAIRWINDS_TOKEN quay.io/fai
 docker cp . insights-ci:/insights
 failed=0
 docker start -a insights-ci || failed=1
-docker cp insights-ci:/insights/$fairwinds_options_junitOutput $fairwinds_options_junitOutput || true
+# docker cp insights-ci:/insights/$fairwinds_options_junitOutput $fairwinds_options_junitOutput || true
 docker rm insights-ci
 if [ "$failed" -eq "1" ]; then
     exit 1

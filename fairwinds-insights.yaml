@@ -16,4 +16,4 @@ options:
   organization: acme-co
   fail: true
   repositoryName: fairwindsops/cicd-test
-  hostname: https://staging.insights.fairwinds.com
+  hostname: https://rb-cicd.insights.fairwinds.com
