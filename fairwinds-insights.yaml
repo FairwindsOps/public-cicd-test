@@ -15,5 +15,5 @@ options:
   junitOutput: ./tmp/junit
   organization: acme-co
   fail: true
-  repositoryName: fairwindsops/cicd-test-2
+  repositoryName: FairwindsOps/cicd-test-2
   hostname: https://rb-cicd.insights.fairwinds.com
