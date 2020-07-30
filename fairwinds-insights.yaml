@@ -1,19 +1,29 @@
-images:
-  folder: ./tmp/images
-manifests:
-  folder: ./tmp/manifests
-  yaml:
-    - ./failing.yaml
-    - ./passing.yaml
-  helm:
-    - name: helm-release-pruner
-      path: ./chart
-      variableFile: ./chart/values.yaml
-
 options:
-  tempFolder: ./tmp/options
-  junitOutput: ./tmp/junit
-  organization: acme-co
-  fail: true
-  repositoryName: FairwindsOps/cicd-test-2
-  hostname: https://rb-cicd.insights.fairwinds.com
+  organization: demoorg
+  repositoryName: FairwindsOps/cicd-test-3
+  tempFolder: ./temp/insights
+  newActionItemThreshold: 1
+  severityThreshold: warning
+
+# These images will be scanned for vulnerabilities.
+# Images contained in manifests below will automatically be tested
+images:
+  folder: ./temp/images
+  docker:
+    - alpine:3.10.0
+
+# These manifests will be scanned for configuration issues.
+manifests:
+  folder: ./temp/manifests
+  yaml:
+    - ./passing.yaml
+    - ./failing.yaml
+  helm:
+    # List out any helm charts to template and check
+    - name: staging
+      path: ./chart/
+      # The values to use when templating
+      variables:
+        image:
+          tag: latest
+
