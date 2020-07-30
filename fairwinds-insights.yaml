@@ -6,6 +6,7 @@ options:
   newActionItemThreshold: 1
   severityThreshold: warning
   setExitCode: true
+  hostname: https://rb-cicd.insights.fairwinds.com
 
 # These images will be scanned for vulnerabilities.
 # Images contained in manifests below will automatically be tested
