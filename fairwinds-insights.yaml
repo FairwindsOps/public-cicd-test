@@ -2,6 +2,7 @@ options:
   organization: demoorg
   repositoryName: FairwindsOps/cicd-test-3
   tempFolder: ./temp/insights
+  junitOutput: ./temp/junit
   newActionItemThreshold: 1
   severityThreshold: warning
   setExitCode: true
