@@ -26,7 +26,7 @@ parse_yaml() {
 
         awk -F"$fs" '{
             indent = length($1)/2;
-           if (length($2) == 0) { conj[indent]="+";} else {conj[indent]="";}
+            if (length($2) == 0) { conj[indent]="+";} else {conj[indent]="";}
             vname[indent] = $2;
             for (i in vname) {if (i > indent) {delete vname[i]}}
                 if (length($3) > 0) {
@@ -69,8 +69,9 @@ docker create --name insights-ci -e FAIRWINDS_TOKEN=$FAIRWINDS_TOKEN quay.io/fai
 docker cp . insights-ci:/insights
 failed=0
 docker start -a insights-ci || failed=1
-# docker cp insights-ci:/insights/$fairwinds_options_junitOutput $fairwinds_options_junitOutput || true
+#docker cp insights-ci:/insights/$fairwinds_options_junitOutput $fairwinds_options_junitOutput
 docker rm insights-ci
 if [ "$failed" -eq "1" ]; then
     exit 1
 fi
+

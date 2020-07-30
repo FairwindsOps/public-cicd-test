@@ -13,10 +13,6 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Setup
-          command: |
-            docker pull busybox
-      - run:
           name: Insights CI
           command: ./ci.sh
 
