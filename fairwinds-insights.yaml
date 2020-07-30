@@ -25,7 +25,5 @@ manifests:
     - name: staging
       path: ./chart/
       # The values to use when templating
-      variables:
-        image:
-          tag: latest
+      variableFile: ./chart/values.yaml
 
