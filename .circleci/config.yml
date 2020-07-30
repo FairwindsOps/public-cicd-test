@@ -13,6 +13,10 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
+          name: Setup
+          command: |
+            docker pull alpine:3.10.0
+      - run:
           name: Insights CI
           command: ./ci.sh
 
