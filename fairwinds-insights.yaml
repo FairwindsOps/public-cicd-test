@@ -1,6 +1,6 @@
 options:
   organization: demoorg
-  repositoryName: FairwindsOps/cicd-test-3
+  repositoryName: FairwindsOps/aras-demo
   tempFolder: ./temp/insights
   junitOutput: ./temp/junit
   newActionItemThreshold: 1
