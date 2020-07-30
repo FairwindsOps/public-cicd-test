@@ -4,7 +4,6 @@ options:
   tempFolder: ./temp/insights
   junitOutput: ./temp/junit
   newActionItemThreshold: 1
-  severityThreshold: warning
   setExitCode: true
   hostname: https://rb-cicd.insights.fairwinds.com
 
