@@ -1,5 +1,5 @@
 options:
-  organization: demoorg
+  organization: sap-demo
   repositoryName: FairwindsOps/sap-demo
   tempFolder: ./temp/insights
   junitOutput: ./temp/junit
