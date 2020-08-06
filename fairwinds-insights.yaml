@@ -4,7 +4,7 @@ options:
   tempFolder: ./temp/insights
   junitOutput: ./temp/junit
   newActionItemThreshold: 1
-  setExitCode: true
+  setExitCode: false
   hostname: https://insights.fairwinds.com
 
 # These images will be scanned for vulnerabilities.
