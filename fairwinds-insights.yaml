@@ -1,11 +1,11 @@
 options:
-  organization: sap-demo
+  organization: personal
   repositoryName: FairwindsOps/sap-demo
   tempFolder: ./temp/insights
   junitOutput: ./temp/junit
   newActionItemThreshold: 1
   setExitCode: true
-  hostname: https://staging.insights.fairwinds.com
+  hostname: https://insights.fairwinds.com
 
 # These images will be scanned for vulnerabilities.
 # Images contained in manifests below will automatically be tested
