@@ -1,6 +1,6 @@
 options:
   organization: personal
-  repositoryName: FairwindsOps/sap-demo
+  repositoryName: FairwindsOps/flatfile-demo
   tempFolder: ./temp/insights
   junitOutput: ./temp/junit
   newActionItemThreshold: 1
