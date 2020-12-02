@@ -1,7 +1,7 @@
 options:
   organization: acme-co
   hostname: https://jd-free-cd-front.insights.fairwinds.com
-  repositoryName: FairwindsOps/cicd-test
+  repositoryName: FairwindsOps/public-cicd-test
   baseBranch: main
 
 # These images will be scanned for vulnerabilities.
