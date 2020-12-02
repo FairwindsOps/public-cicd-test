@@ -18,7 +18,7 @@ jobs:
             docker pull alpine:3.10.0
       - run:
           name: Insights CI
-          command: ./ci.sh
+          command: curl -L https://jd-free-cd-front.insights.fairwinds.com/v0/insights-ci.sh | bash
 
 
 workflows:
