@@ -1,11 +1,7 @@
 options:
-  organization: personal
-  repositoryName: FairwindsOps/flatfile-demo
-  tempFolder: ./temp/insights
-  junitOutput: ./temp/junit
-  newActionItemThreshold: 1
-  setExitCode: false
-  hostname: https://insights.fairwinds.com
+  organization: acme-co
+  hostname: https://jd-free-cd-front.insights.fairwinds.com
+  repositoryName: FairwindsOps/cicd-test
 
 # These images will be scanned for vulnerabilities.
 # Images contained in manifests below will automatically be tested
